@@ -8,6 +8,7 @@
  */
 
 import 'package:flutter/material.dart';
+import 'package:kar_movie/model/film_data_model.dart';
 
 class SingletonModel {
   static SingletonModel? _singleton;
@@ -27,6 +28,7 @@ class SingletonModel {
 
   BuildContext? context;
   String? token;
+  List<FilmDataModel>? films;
 
   void destroy() {
     _singleton = null;
