@@ -8,7 +8,7 @@
  */
 
 class API {
-  APIFilm genre = APIFilm();
+  APIFilm film = APIFilm();
 }
 
 class APIFilm {
