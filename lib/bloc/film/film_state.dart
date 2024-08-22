@@ -8,6 +8,8 @@
  */
 
 import 'package:equatable/equatable.dart';
+import 'package:kar_movie/model/film_data_model.dart';
+import 'package:kar_movie/model/response_model.dart';
 
 abstract class FilmState extends Equatable {
   const FilmState();
@@ -17,3 +19,25 @@ abstract class FilmState extends Equatable {
 }
 
 class FilmInitialState extends FilmState {}
+
+class FilmDataSuccessState extends FilmState {
+  const FilmDataSuccessState();
+}
+
+class FilmDataFailedState extends FilmState {
+  final ResponseModel data;
+
+  const FilmDataFailedState(this.data);
+}
+
+class FilmSearchSuccessState extends FilmState {
+  final List<FilmDataModel> data;
+
+  const FilmSearchSuccessState(this.data);
+}
+
+class FilmSearchFailedState extends FilmState {
+  final ResponseModel data;
+
+  const FilmSearchFailedState(this.data);
+}
