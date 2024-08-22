@@ -25,7 +25,7 @@ class Repo {
 }
 
 class RepoFilm {
-  Future<dio.Response> data() async {
-    return await _dio.get(url: _api.film.data);
+  Future<dio.Response> data({required Map<String, dynamic> param}) async {
+    return await _dio.get(url: _api.film.data, param: param);
   }
 }

@@ -22,7 +22,9 @@ class Request {
 }
 
 class RequestFilm {
-  Future<dio.Response> data() {
-    return _repo.film.data();
+  Future<dio.Response> data({String? title}) {
+    return _repo.film.data(param: {
+      if (title != null) "search": title,
+    });
   }
 }
