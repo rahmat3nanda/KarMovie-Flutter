@@ -15,3 +15,23 @@ abstract class FilmEvent extends Equatable {
   @override
   List<Object> get props => [];
 }
+
+class FilmDataEvent extends FilmEvent {
+  const FilmDataEvent();
+
+  @override
+  String toString() {
+    return 'FilmDataEvent{}';
+  }
+}
+
+class FilmSearchEvent extends FilmEvent {
+  final String title;
+
+  const FilmSearchEvent(this.title);
+
+  @override
+  String toString() {
+    return 'FilmSearchEvent{title: $title}';
+  }
+}
