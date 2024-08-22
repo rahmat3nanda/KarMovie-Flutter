@@ -1,3 +1,12 @@
+/*
+ * *
+ *  * main.dart - KarMovie
+ *  * Created by Rahmat Trinanda (rahmat3nanda@gmail.com) on 08/23/2024, 05:22
+ *  * Copyright (c) 2024 . All rights reserved.
+ *  * Last modified 08/23/2024, 05:21
+ *
+ */
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
