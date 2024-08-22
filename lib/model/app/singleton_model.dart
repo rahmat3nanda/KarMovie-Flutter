@@ -1,3 +1,12 @@
+/*
+ * *
+ *  * singleton_model.dart - KarMovie
+ *  * Created by Rahmat Trinanda (rahmat3nanda@gmail.com) on 08/23/2024, 05:13
+ *  * Copyright (c) 2024 . All rights reserved.
+ *  * Last modified 08/23/2024, 05:12
+ *
+ */
+
 import 'package:flutter/material.dart';
 
 class SingletonModel {
