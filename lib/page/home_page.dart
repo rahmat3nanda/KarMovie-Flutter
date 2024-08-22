@@ -15,8 +15,8 @@ import 'package:kar_movie/common/styles.dart';
 import 'package:kar_movie/model/app/error_model.dart';
 import 'package:kar_movie/model/app/singleton_model.dart';
 import 'package:kar_movie/model/film_data_model.dart';
+import 'package:kar_movie/page/search_page.dart';
 import 'package:kar_movie/tool/helper.dart';
-import 'package:kar_movie/widget/preload_page_view.dart';
 import 'package:kar_movie/widget/reload_data_widget.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 import 'package:intl/intl.dart';
@@ -34,7 +34,6 @@ class _HomePageState extends State<HomePage> {
   late Helper _helper;
 
   late RefreshController _cRefresh;
-  late PreloadPageController _cPage;
   ErrorModel? _error;
   late bool _isLoading;
 
@@ -45,7 +44,6 @@ class _HomePageState extends State<HomePage> {
     _filmBloc = BlocProvider.of<FilmBloc>(context);
     _helper = Helper();
     _cRefresh = RefreshController(initialRefresh: false);
-    _cPage = PreloadPageController();
     _isLoading = false;
     _onRefresh(fromCache: true);
   }
@@ -97,7 +95,7 @@ class _HomePageState extends State<HomePage> {
                 IconButton(
                   onPressed: () => _helper.jumpToPage(
                     context,
-                    page: const Placeholder(),
+                    page: const SearchPage(),
                   ),
                   icon: const Icon(Icons.search),
                 )
