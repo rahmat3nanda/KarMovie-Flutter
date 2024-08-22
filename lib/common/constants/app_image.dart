@@ -10,8 +10,8 @@
 const _path = "asset/images/";
 
 class AppImage {
-  static String momovie = "kar_movie.png".withImagePath();
-  static String momovieFill = "kar_movie_fill.png".withImagePath();
+  static String karMovie = "kar_movie.png".withImagePath();
+  static String karMovieFill = "kar_movie_fill.png".withImagePath();
 }
 
 extension AppImageString on String {

@@ -10,7 +10,7 @@
 const _path = "asset/icons/";
 
 class AppIcon {
-  static String momovie = "kar_movie.svg".withIconPath();
+  static String karMovie = "kar_movie.svg".withIconPath();
 }
 
 extension AppIconString on String {
